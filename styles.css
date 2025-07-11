@@ -1,0 +1,122 @@
+/* Κοινά styles */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #eee;
+}
+
+/* Hero 1 */
+
+.hero1 {
+  height: 100vh;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero1 .container {
+  max-width: 600px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 40px #2575fcaa;
+}
+
+.hero1 h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero1 p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero1 .btn {
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #2575fc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero1 .btn:hover {
+  background-color: #6a11cb;
+  color: white;
+}
+
+/* Hero 2 - Wave Section */
+
+.hero-wave {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.wave {
+  animation: waveMotion 10s ease-in-out infinite alternate;
+}
+
+@keyframes waveMotion {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+.hero-wave .hero-content {
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.hero-wave h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-wave p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-wave .cta-button {
+  background-color: #ffffff20;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-wave .cta-button:hover {
+  background-color: #00c6ff;
+  color: #000;
+}
